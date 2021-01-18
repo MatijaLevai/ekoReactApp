@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+  font-family: sans-serif;
+}
+nav
+{
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 19vh;
+  background-color:green;
+  color: white;
+  font-size: 40px;
+}
+
+.nav-links
+{
+  list-style-type: none;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+}
