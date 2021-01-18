@@ -7,14 +7,13 @@ import {
     Typography,
     MenuItem,
     FormControl,
-
     InputLabel,
     CircularProgress,
     Select
 } from "@material-ui/core";
 import * as Yup from "yup";
 import {Send} from '@material-ui/icons';
-const styles = theme => ({
+const classes = theme => ({
     root: {
         width: "auto",
         height: "auto",
@@ -87,7 +86,7 @@ const styles = theme => ({
 
 
 const OrderForm = props => {
-    const { classes, formSettings, initialValues, loading, handleSubmit, translations, handleNext, handleUpload, backValid, backendError, setBackendError } = props;
+    const {  formSettings, initialValues, loading, handleSubmit, translations, handleNext, handleUpload, backValid, backendError, setBackendError } = props;
     return (
         <div className={classes.root}>
             <Formik
@@ -287,4 +286,4 @@ const OrderForm = props => {
     );
 };
 
-export default withStyles(styles, { withTheme: true })(OrderForm);
+export default withStyles(classes, { withTheme: true })(OrderForm);
